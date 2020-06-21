@@ -1,3 +1,8 @@
+/* Table of contents */
+/* 1. FONTS  */
+/* 2. GENERAL STYLES  */
+/* 3. CONTAINER  */
+
 /* FONTS */
 @font-face {
   font-family: "Rubik";
@@ -25,8 +30,8 @@
   font-display: swap;
   font-weight: 700;
   src: local("Rubik Bold"), local("Rubik-Bold"),
-       url("../webfonts/rubik-v9-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../webfonts/rubik-v9-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url("../webfonts/rubik-v9-latin-700.woff2") format("woff2"), 
+       url("../webfonts/rubik-v9-latin-700.woff") format("woff"); 
 }
 
 @font-face {
@@ -34,8 +39,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../webwebfonts/roboto-v20-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url("../webfonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../webwebfonts/roboto-v20-latin-regular.woff2") format("woff2"), 
+  url("../webfonts/roboto-v20-latin-regular.woff") format("woff"); 
 }
 
 @font-face {
@@ -44,8 +49,8 @@
   font-weight: 400;
   font-display: swap;
   src: 
-       url("../webfonts/roboto-v20-latin-italic.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../webfonts/roboto-v20-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url("../webfonts/roboto-v20-latin-italic.woff2") format("woff2"),
+       url("../webfonts/roboto-v20-latin-italic.woff") format("woff"); 
 }
 
 @font-face {
@@ -54,8 +59,8 @@
   font-weight: 500;
   font-display: swap;
   src: 
-       url("../webfonts/roboto-v20-latin-500italic.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../webfonts/roboto-v20-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url("../webfonts/roboto-v20-latin-500italic.woff2") format("woff2"), 
+       url("../webfonts/roboto-v20-latin-500italic.woff") format("woff"); 
 }
 
 @font-face {
@@ -64,11 +69,32 @@
   font-weight: 500;
   font-display: swap;
   src: 
-       url("../webfonts/roboto-v20-latin-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../webfonts/roboto-v20-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url("../webfonts/roboto-v20-latin-500.woff2") format("woff2"), 
+       url("../webfonts/roboto-v20-latin-500.woff") format("woff"); 
 }
 }
-
-body {
+/* GENERAL STYLES */
+.page {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+.page__body {
+  height: 100%;
   font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #434343;
+}
+
+/* CONTAINER  */
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
